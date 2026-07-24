@@ -1,19 +1,18 @@
-import { site } from "../data";
+import { hero } from "../data";
 
 export default function Hero() {
   return (
     <section id="top" className="hero">
       <div className="container hero-inner">
-        <p className="eyebrow">Investment Research</p>
-        <h1>{site.name}</h1>
-        <p className="hero-tagline">{site.tagline}</p>
-        <div className="hero-actions">
-          <a className="btn btn-primary" href="#insights">
-            Read our research
-          </a>
-          <a className="btn btn-secondary" href="#contact">
-            Get in touch
-          </a>
+        <p className="eyebrow">{hero.eyebrow}</p>
+        <h1>{hero.title}</h1>
+        <p className="hero-tagline">{hero.subtitle}</p>
+        <div className="badge-row">
+          {hero.badges.map((badge) => (
+            <span key={badge} className="badge">
+              {badge}
+            </span>
+          ))}
         </div>
       </div>
     </section>

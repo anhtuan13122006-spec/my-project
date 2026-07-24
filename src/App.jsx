@@ -1,9 +1,10 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import Methodology from "./components/Methodology";
+import IndustryReport from "./components/IndustryReport";
+import CaseStudies from "./components/CaseStudies";
+import Dashboard from "./components/Dashboard";
 import About from "./components/About";
-import Focus from "./components/Focus";
-import Insights from "./components/Insights";
-import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import "./App.css";
 
@@ -13,10 +14,11 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
+        <Methodology />
+        <IndustryReport />
+        <CaseStudies />
+        <Dashboard />
         <About />
-        <Focus />
-        <Insights />
-        <Contact />
       </main>
       <Footer />
     </>
