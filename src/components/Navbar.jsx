@@ -2,10 +2,11 @@ import { useState } from "react";
 import { site } from "../data";
 
 const links = [
-  { href: "#about", label: "About" },
-  { href: "#focus", label: "Research Focus" },
-  { href: "#insights", label: "Insights" },
-  { href: "#contact", label: "Contact" },
+  { href: "#methodology", label: "Phương pháp luận" },
+  { href: "#industry", label: "Industry Report" },
+  { href: "#cases", label: "Case Studies" },
+  { href: "#dashboard", label: "Dashboard" },
+  { href: "#about", label: "Về dự án" },
 ];
 
 export default function Navbar() {
@@ -15,7 +16,7 @@ export default function Navbar() {
     <header className="navbar">
       <div className="container navbar-inner">
         <a href="#top" className="brand" onClick={() => setOpen(false)}>
-          {site.shortName}
+          {site.shortName.toUpperCase()} <span>{site.shortNameAccent.toUpperCase()}</span>
         </a>
         <button
           type="button"
