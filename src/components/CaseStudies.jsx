@@ -18,9 +18,8 @@ export default function CaseStudies() {
               <div className={`rec rec-${report.recTone}`}>
                 {report.recommendation}
               </div>
-              <h3>
-                {report.title} <span className="location">— {report.location}</span>
-              </h3>
+              <h3>{report.title}</h3>
+              <p className="case-location">{report.location}</p>
               <p className="case-subtitle">{report.subtitle}</p>
               <dl className="snapshot-list">
                 {report.snapshot.map((item) => (

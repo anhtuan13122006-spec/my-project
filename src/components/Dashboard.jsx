@@ -12,7 +12,6 @@ export default function Dashboard() {
               <tr>
                 <th>Xếp hạng</th>
                 <th>Làng nghề</th>
-                <th>Địa phương</th>
                 <th>Điểm có trọng số (/5)</th>
               </tr>
             </thead>
@@ -23,8 +22,10 @@ export default function Dashboard() {
                   className={row.caseStudy ? "highlight" : undefined}
                 >
                   <td>{row.rank}</td>
-                  <td>{row.name}</td>
-                  <td>{row.location}</td>
+                  <td>
+                    <div className="village-name">{row.name}</div>
+                    <div className="village-location">{row.location}</div>
+                  </td>
                   <td>{row.score}</td>
                 </tr>
               ))}
